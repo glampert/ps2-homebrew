@@ -25,7 +25,7 @@ I have written a few blog posts about this endeavor, you can read them [here](ht
      ++-framework/ => A set of reusable classes and code shared by all demos.
      |
      |
-     +-extras/ => Zip packages with a Mac OSX compatible version of the PCSX2 Emulator and a tuned PS2DEV_SDK that builds and install on OSX.
+     +-extras/ => Third-party docs and some screenshots.
        |
        +-screenshots/ => Screenshots of some of the demos.
 
