@@ -66,7 +66,7 @@ That plus my short knowledge of makefiles has resulted in this suboptimal setup.
 **`.h/.hpp` file convention:**
 
 This is *almost* a convention in this project: Files with the `.hpp` extension are human-generate
-C++ header files while file with the `.h` extension are (almost always) machine-generated raw textual includes.
+C++ header files while files with the `.h` extension are (almost always) machine-generated raw textual includes.
 This project makes heavy use of built-in assets for things like fonts and bitmaps, dumped as C-style arrays
 of bytes and then embedded into the source code. For such files, the `.h` extension is used to differentiate
 them from programmer-written C++ includes. This is an inconsistent notation though, some `.h` files in this project
