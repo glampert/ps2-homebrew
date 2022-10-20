@@ -1,0 +1,28 @@
+
+--------------------------------------------------------------------------
+Some portability issues related to the PS2 and GCCv3 that I've encountered
+--------------------------------------------------------------------------
+
+- `#pragma pack` is not supported! Need to use `__attribute__((packed))`.
+
+- `std::vsnprintf` is not available on namespace std. Have to use just `vsnprintf`.
+
+- No <cstdint> (neither <stdint.h>).
+
+- No way of specifying (that I know of) the calling convention of a function.
+  So C++ class method will always be "this_call"? That would break any format functions
+  defined as class members (format funcs require "cdecl"). *This was NOT confirmed!*
+
+- No `HUGE_VAL` implemented (will compile but fail to link!).
+
+- No `double` precision (using double compiles but defaults to float).
+
+- All math functions are suffixed with `f`. E.g.: sqrtf, atanf, sinf, etc...
+  (because there is no double precision, so only the float ones are available).
+
+- My tricky `arrayLength(T)` template function doesn't seem to work
+  with explicitly `static` arrays. GCC bug???
+
+- Minimal Standard C library. Did not test the STL, but the header only
+  classes should work more or less...
+
