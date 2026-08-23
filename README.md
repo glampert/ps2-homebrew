@@ -7,10 +7,10 @@ This is a mirror of https://bitbucket.org/glampert/ps2dev-tests
 
 ## About:
 
-This repository contains a number of homebrew PS2 demos and simple games that I've
-developed in the past using the freely available [PS2DEV](https://github.com/ps2dev) unofficial SDK.
+This repository contains a number of homebrew PlayStation 2 demos and simple games that I've
+developed in the past using the freely available [PS2DEV](https://github.com/ps2dev) SDK.
 
-I have written a few blog posts about this endeavor, you can read them [here](http://glampert.com/2015/04-24/ps2-homebrew-a-dungeon-game/).
+I have written a few blog posts about this endeavor, you can read them [here](https://glampert.github.io/2015/04-24/ps2-homebrew-a-dungeon-game/).
 
 ## Directory Structure:
 
@@ -18,16 +18,16 @@ I have written a few blog posts about this endeavor, you can read them [here](ht
      |
      +-source/ => Soure code for the PS2 demos.
       |
-      +--demos/ => Source code and assets for the individual demo applications.
+      +--demos/ => Source code and assets for each individual application.
       |  |
-      |  +-bin/ => Pre-built ELF binaries ready for use in the PS2 or Emulator.
+      |  +-bin/ => Pre-built ELF binaries ready to run in the PS2 Console or Emulator.
       |
-     ++-framework/ => A set of reusable classes and code shared by all demos.
+     ++-framework/ => A set of reusable C++ classes and code shared by all demos.
      |
      |
      +-extras/ => Third-party docs and some screenshots.
        |
-       +-screenshots/ => Screenshots of some of the demos.
+       +-screenshots/ => Screenshots of the demo applications.
 
 ----
 
